@@ -51,6 +51,32 @@ function checkInputs() {
   } else {
     setSuccessFor(passwordConfirmation);
   }
+  const togglePassword = document.getElementById("togglePassword");
+  const togglePasswordConfirmation = document.getElementById(
+    "togglePasswordConfirmation",
+  );
+
+  // Mostrar/esconder senha
+  togglePassword.addEventListener("click", () => {
+    if (password.type === "password") {
+      password.type = "text";
+      togglePassword.innerText = "🙈";
+    } else {
+      password.type = "password";
+      togglePassword.innerText = "👁️";
+    }
+  });
+
+  // Mostrar/esconder confirmação
+  togglePasswordConfirmation.addEventListener("click", () => {
+    if (passwordConfirmation.type === "password") {
+      passwordConfirmation.type = "text";
+      togglePasswordConfirmation.innerText = "🙈";
+    } else {
+      passwordConfirmation.type = "password";
+      togglePasswordConfirmation.innerText = "👁️";
+    }
+  });
 
   // Verificar se todos os campos estão válidos
   const formControls = form.querySelectorAll(".form-control");
@@ -85,3 +111,22 @@ function checkEmail(email) {
     email,
   );
 }
+togglePassword.addEventListener("click", () => {
+  if (password.type === "password") {
+    password.type = "text";
+    togglePassword.innerText = "🙈";
+  } else {
+    password.type = "password";
+    togglePassword.innerText = "👁️";
+  }
+});
+
+togglePasswordConfirmation.addEventListener("click", () => {
+  if (passwordConfirmation.type === "password") {
+    passwordConfirmation.type = "text";
+    togglePasswordConfirmation.innerText = "🙈";
+  } else {
+    passwordConfirmation.type = "password";
+    togglePasswordConfirmation.innerText = "👁️";
+  }
+});

@@ -1,22 +1,28 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/b89b2ad33b.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
+
     <title>FormulárioDev</title>
   </head>
+
   <body>
     <div class="container">
       <div class="header">
@@ -29,7 +35,7 @@
           <input
             type="text"
             id="username"
-            placeholder="Digite seu nome de usuário....."
+            placeholder="Digite seu nome de usuário..."
           />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
@@ -38,11 +44,7 @@
 
         <div class="form-control">
           <label for="email">E-mail</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Digite seu nome de E-mail....."
-          />
+          <input type="email" id="email" placeholder="Digite seu e-mail..." />
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
@@ -50,11 +52,15 @@
 
         <div class="form-control">
           <label for="password">Senha</label>
+
           <input
-            type="Password"
+            type="password"
             id="password"
-            placeholder="Digite sua senha....."
+            placeholder="Digite sua senha..."
           />
+
+          <span class="eye" id="togglePassword">👁️</span>
+
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
@@ -62,17 +68,21 @@
 
         <div class="form-control">
           <label for="password-confirmation">Confirmação de senha</label>
+
           <input
             type="password"
             id="password-confirmation"
-            placeholder="Confirme sua senha....."
+            placeholder="Confirme sua senha..."
           />
+
+          <span class="eye" id="togglePasswordConfirmation">👁️</span>
+
           <i class="fas fa-exclamation-circle"></i>
           <i class="fas fa-check-circle"></i>
           <small>Mensagem de erro</small>
         </div>
 
-        <button type="submmit">Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   </body>
